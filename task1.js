@@ -5,7 +5,7 @@ function Mail(subj, msg) {
   
   // Type your code below this line!
   
-  const newMail = new Mail(  )
+  const newMail = new Mail("hello", "world")
   
   // Type your code above this line!
   
