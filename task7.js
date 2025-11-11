@@ -1,8 +1,9 @@
-// =====================================================
-// 🚗 Task 7 — Objeto "Car"
-// =====================================================
 
-// Función constructora que define un vehículo
+// TASK 7 OBJETO COCHE
+
+
+// CONSTRUCTOR CAR QUE DESCRIBE VEHICULO
+
 function Car(marca, modelo, año, motor, color, kilometraje) {
   this.marca = marca;
   this.modelo = modelo;
@@ -11,7 +12,8 @@ function Car(marca, modelo, año, motor, color, kilometraje) {
   this.color = color;
   this.kilometraje = kilometraje;
 
-  // Método que muestra la descripción completa del coche
+  // METODO QUE MUESTRA DESCRIPCION COMPLETA DEL VEHICULO
+
   this.describe = function () {
     return `🚗 ${this.marca} ${this.modelo} (${this.año}) - Motor: ${this.motor}, Color: ${this.color}, Kilometraje: ${this.kilometraje} km`;
   };
@@ -19,10 +21,12 @@ function Car(marca, modelo, año, motor, color, kilometraje) {
  
 }
 
-// Crear una instancia del objeto Car
+// VARIABLE CONSTANTE QUE ALMACENA EL OBJETO CAR
+
 const myCar = new Car("Subaru", "Impreza", 2020, "Gasolina", "Azul", 45000);
 
-// DESCRIPCION DEL COCHE 
+// MUESTRA EN CONSOLA LA INFORMACION DEL VEHICULO
+
 console.log("=== INFORMACIÓN DEL COCHE ===");
 console.log(myCar.describe());
 
