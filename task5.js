@@ -1,19 +1,23 @@
+import PromptSync from "prompt-sync"
 
+const prompt = PromptSync();
+
+// Type your code above this line!
+let count = prompt("Cuantos nombres desea agregar: ");
+//const count = parseInt(process.argv[3])
+const myList = new FriendsList()
+
+for (let i = 0; i < count; i++) {
+
+  myList.friends.push(prompt("ingrese el nombre: "))
+}
+// Cuando usas new FriendsList(), se crea un objeto con una propiedad names, que es un arreglo vacío.
+console.log(myList.friends)
 
 // Type your code below this line!
 function FriendsList() {
   this.friends = []
 }
-// Type your code above this line!
-const count = parseInt(process.argv[2])
-const myList = new FriendsList()
-
-for (let i = 0; i < count; i++) {
-  myList.friends.push(process.argv[3 + i])
-}
-// Cuando usas new FriendsList(), se crea un objeto con una propiedad names, que es un arreglo vacío.
-console.log(myList.friends)
-
 
 //         LEER EL MENSAJE                //
 
