@@ -8,7 +8,7 @@ function Mail(subj, msg) {
   }
 }
 
-const newMail = new Mail(process.argv[2], process.argv[3])
+const newMail = new Mail(process.argv[3], process.argv[4])
 newMail.printMail()
 
 //               LEER EL MENSAJE           //

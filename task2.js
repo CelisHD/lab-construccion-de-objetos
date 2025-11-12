@@ -1,3 +1,6 @@
+import PromptSync from "prompt-sync";
+
+const prompt = PromptSync();
 
 // Objetivo de Task 2: Modificar el constructor Mail para que reciba el asunto y el mensaje desde la línea de comandos usando process.argv[3] y process.argv[4]. Luego crear una instancia con new Mail(...) y mostrarla por consola.
 
